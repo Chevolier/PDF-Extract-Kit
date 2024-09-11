@@ -235,14 +235,30 @@ pip install --extra-index-url https://miropsota.github.io/torch_packages_builder
 安装完环境后，可能会遇到一些版本冲突导致版本变更，如果遇到了版本相关的报错，可以尝试下面的命令重新安装指定版本的库。
 
 ```bash
-pip install pillow==8.4.0
+pip install pillow==9.5.0
 ```
 
 除了版本冲突外，可能还会遇到torch无法调用的错误，可以先把下面的库卸载，然后重新安装cuda12和cudnn。
-
+<!-- 
 ```bash
 pip uninstall nvidia-cusparse-cu12
+``` -->
+
+
+```bash
+pip install Wand
+
+yum update
+yum install ImageMagick-devel
 ```
+
+Downgrade unimernet to handle size mismatch issue
+
+```bash
+pip install unimernet==0.1.6
+```
+
+Ref: https://docs.wand-py.org/en/latest/guide/install.html
 
 ### 参考[模型下载](models/README.md)下载所需模型权重
 

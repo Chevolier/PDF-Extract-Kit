@@ -4,8 +4,8 @@ model_args:
   conf_thres: 0.25
   iou_thres: 0.45
   pdf_dpi: 200
-  layout_weight: models/Layout/model_final.pth
-  mfd_weight: models/MFD/weights.pt
-  mfr_weight: models/MFR/UniMERNet
-  tr_weight: models/TabRec/StructEqTable
+  layout_weight: /home/ec2-user/SageMaker/efs/Models/PDF-Extract-Kit/models/Layout/model_final.pth
+  mfd_weight: /home/ec2-user/SageMaker/efs/Models/PDF-Extract-Kit/models/MFD/weights.pt
+  mfr_weight: /home/ec2-user/SageMaker/efs/Models/PDF-Extract-Kit/models/MFR/UniMERNet
+  tr_weight: /home/ec2-user/SageMaker/efs/Models/PDF-Extract-Kit/models/TabRec/StructEqTable
   table_max_time: 60

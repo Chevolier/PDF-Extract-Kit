@@ -2,13 +2,13 @@ model:
   arch: unimernet
   model_type: unimernet
   model_config:
-    model_name: ./models
+    model_name: /home/ec2-user/SageMaker/efs/Models/PDF-Extract-Kit/models/MFR/UniMERNet
     max_seq_len: 1024
     length_aware: False
   load_pretrained: True
-  pretrained: ./models/pytorch_model.bin
+  pretrained: /home/ec2-user/SageMaker/efs/Models/PDF-Extract-Kit/models/MFR/UniMERNet/pytorch_model.bin
   tokenizer_config:
-    path: ./models
+    path: /home/ec2-user/SageMaker/efs/Models/PDF-Extract-Kit/models/MFR/UniMERNet
 
 datasets:
   formula_rec_eval:
